@@ -95,3 +95,6 @@ console.log(dog1.tailLength);
 // console.log(dog.voice("Woof!"));
 // console.log(dog.spellName());
 // console.log(dog.spellVolume());
+
+// Task 
+// Решить как минимум 5 задач с отправленного док файла. Первые 2 студента которые решили 7 задач получает 1 кристаллик в My stat
