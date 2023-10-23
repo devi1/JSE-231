@@ -36,18 +36,29 @@
 //     document.getElementById("tableXML").innerHTML = table;
 // }
 
-let loc = document.getElementById("location");
+// let loc = document.getElementById("location");
 
-function getLocation(){
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    }
-    else{
-        loc.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
+// function getLocation(){
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(showPosition);
+//     }
+//     else{
+//         loc.innerHTML = "Geolocation is not supported by this browser.";
+//     }
+// }
 
-function showPosition(position){
-    console.log(position);
-    loc.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-}
+// function showPosition(position){
+//     console.log(position);
+//     loc.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+// }
+
+const myApiKey = "9b4203ae7f4f5315de68885f745dbe0d";
+const city = "Almaty";
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${myApiKey}`;
+// const url = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=${myApiKey}`;
+
+fetch(url)
+.then(response => response.json())
+.then(data => {console.log(`Temperature in city: ${city}: ${(data.main.temp - 273.15).toFixed(1)}ºC`)})
+// fetch(url).then(response => response).then(data => {console.log(data)})
+
