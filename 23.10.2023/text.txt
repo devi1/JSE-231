@@ -1,0 +1,3 @@
+<h1>Hello</h1>
+<br>
+<p>This shows how AJAX works</p>
