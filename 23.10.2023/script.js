@@ -61,4 +61,3 @@ fetch(url)
 .then(response => response.json())
 .then(data => {console.log(`Temperature in city: ${city}: ${(data.main.temp - 273.15).toFixed(1)}ºC`)})
 // fetch(url).then(response => response).then(data => {console.log(data)})
-
