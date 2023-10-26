@@ -1,0 +1,3 @@
+https://jsonplaceholder.typicode.com/posts
+
+сделать таблицу состоящую из двух столбцов с данного сайта через fetch вместо XMLHttpRequest

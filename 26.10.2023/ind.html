@@ -6,6 +6,47 @@
     <title>Document</title>
 </head>
 <body>
+    <form id="form">
+        <input type="file" id="picture">
+        <button type="submit">Upload</button>
+    </form>
     <script src="script.js"></script>
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+      
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+      
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      
+        // Your web app's Firebase configuration
+      
+        const firebaseConfig = {
+      
+          apiKey: "AIzaSyD24NLN1OF33nJRvJNPFK6y_8wURukurfc",
+      
+          authDomain: "back-50cca.firebaseapp.com",
+      
+          databaseURL: "https://back-50cca-default-rtdb.europe-west1.firebasedatabase.app",
+      
+          projectId: "back-50cca",
+      
+          storageBucket: "back-50cca.appspot.com",
+      
+          messagingSenderId: "284755420518",
+      
+          appId: "1:284755420518:web:bfbc31fa4c99767e9314a7"
+      
+        };
+      
+      
+        // Initialize Firebase
+      
+        const app = initializeApp(firebaseConfig);
+      
+      </script>
 </body>
 </html>
