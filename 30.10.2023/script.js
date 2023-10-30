@@ -92,12 +92,12 @@
 // .html() - html структуру элемента
 //.val() - возвращает значение формы
 
-$(document).ready(function(){
-    $('button').click(function(){
-        $('#text').html("<button>FGCHVJKLHGFCXFJVKILKGJVIUOPGCHF </button>");
-        $('#text').text("jajjdjaj");
-    });
-    // $('button').click(function(){
-    //     $('input').val("Asd");
-    // });
-})
+// $(document).ready(function(){
+//     $('button').click(function(){
+//         $('#text').html("<button>FGCHVJKLHGFCXFJVKILKGJVIUOPGCHF </button>");
+//         $('#text').text("jajjdjaj");
+//     });
+//     // $('button').click(function(){
+//     //     $('input').val("Asd");
+//     // });
+// })
