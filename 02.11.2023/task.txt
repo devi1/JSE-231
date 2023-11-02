@@ -1,0 +1,1 @@
+Задача, построить графики, PieChart и Bars, используя данные Price и Artist с файла catalog.xml
